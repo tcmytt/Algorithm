@@ -1,0 +1,1 @@
+// i+(1<<j)-1 <= n co the bo -1 phan lon truong hop se khong sai  

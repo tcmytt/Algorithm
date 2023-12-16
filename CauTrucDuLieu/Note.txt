@@ -1,0 +1,37 @@
+C++ cung cấp một loạt các container (bộ chứa) để lưu trữ và quản lý dữ liệu. Dưới đây là danh sách các container phổ biến trong C++:
+
+std::vector: Vector là một mảng động có thể thay đổi kích thước, cho phép thêm, xóa phần tử một cách hiệu quả ở cuối mảng. Độ phức tạp truy cập là O(1), thêm và xóa phần tử ở cuối là O(1), thêm và xóa ở bất kỳ vị trí nào khác là O(n).
+std::list: List là danh sách liên kết hai chiều, cho phép thêm và xóa phần tử ở bất kỳ vị trí nào một cách hiệu quả. Độ phức tạp truy cập là O(n), thêm và xóa là O(1).
+std::deque: Deque (double-ended queue) là một mảng động có thể thay đổi kích thước, cho phép thêm và xóa phần tử ở cả hai đầu mảng một cách hiệu quả. Độ phức tạp truy cập, thêm và xóa ở đầu và cuối là O(1), thêm và xóa ở bất kỳ vị trí nào khác là O(n).
+std::set: Set là một container không cho phép các phần tử trùng lặp và tự sắp xếp các phần tử theo thứ tự tăng dần. Độ phức tạp truy cập, thêm và xóa là O(log n).
+std::map: Map là một container không cho phép các khóa trùng lặp và tự sắp xếp các cặp khóa-giá trị theo khóa tăng dần. Độ phức tạp truy cập, thêm và xóa là O(log n).
+std::unordered_set: Unordered_set là một container không cho phép các phần tử trùng lặp và không sắp xếp các phần tử. Độ phức tạp truy cập, thêm và xóa trung bình là O(1), nhưng có thể là O(n) trong trường hợp xấu nhất.
+std::unordered_map: Unordered_map là một container không cho phép các khóa trùng lặp và không sắp xếp các cặp khóa-giá trị. Độ phức tạp truy cập, thêm và xóa trung bình là O(1), nhưng có thể là O(n) trong trường hợp xấu nhất.
+std::stack: Stack là một container dựa trên nguyên tắc LIFO (Last-In-First-Out) và thường được sử dụng cho các thao tác push và pop.
+std::queue: Queue là một container dựa trên nguyên tắc FIFO (First-In-First-Out) và thường được sử dụng cho các thao tác enqueue và dequeue.
+std::priority_queue: Priority_queue là một hàng đợi ưu tiên dựa trên heap, cho phép truy cập và xóa phần tử có độ ưu tiên cao nhất một cách hiệu quả.
+std::bitset: Bitset là một container dùng để lưu trữ các giá trị bit và thực hiện các phép toán bit.
+
+
+
+Có nhiều loại cấu trúc dữ liệu cây trong lập trình, mỗi loại có đặc điểm và ứng dụng riêng biệt. Dưới đây là một số loại cây phổ biến:
+Cây Nhị Phân (Binary Tree):
+Cây Nhị Phân Tìm Kiếm (Binary Search Tree - BST): Các nút được sắp xếp sao cho nút bên trái có giá trị nhỏ hơn nút gốc, và nút bên phải có giá trị lớn hơn nút gốc. Thường được sử dụng cho việc tìm kiếm, thêm và xóa trong dãy số.
+Cây AVL (AVL Tree):
+Cây Nhị Phân Tìm Kiếm cân bằng, đảm bảo độ cao của cây luôn tối ưu. Thao tác thêm và xóa được thực hiện với độ phức tạp O(log n).
+Cây Đỏ-Đen (Red-Black Tree):
+Cây nhị phân tìm kiếm cân bằng, được đánh dấu bằng màu đỏ và đen để đảm bảo cân bằng. Độ phức tạp các thao tác cơ bản là O(log n).
+Cây B (B-Tree):
+Cây B là một cấu trúc dữ liệu được sử dụng trong hệ thống cơ sở dữ liệu và hệ thống tập tin. Nó cho phép lưu trữ dữ liệu trong một cấu trúc có độ sâu biến đổi và độ phức tạp của các thao tác là O(log n).
+Cây Trie (Trie):
+Cây Trie được sử dụng để lưu trữ và tìm kiếm chuỗi ký tự một cách hiệu quả, thường được sử dụng cho việc tìm kiếm từ điển hoặc kiểm tra tính tồn tại của các từ khóa.
+Cây Suffix (Suffix Tree/Array):
+Cây Suffix được sử dụng trong xử lý chuỗi ký tự và giúp thực hiện nhiều thao tác về xâu ký tự, như tìm kiếm chuỗi con, tìm kiếm tất cả các xuất hiện của một chuỗi, và nhiều ứng dụng trong xử lý ngôn ngữ tự nhiên.
+Cây Heap (Heap Tree):
+Cây Heap được sử dụng để triển khai các hàng đợi ưu tiên. Có hai loại chính: cây Heap Tối Thiểu (Min-Heap) và cây Heap Tối Đa (Max-Heap).
+Cây Trie Radix (Radix Trie):
+Cây Trie Radix là một biến thể của cây Trie được sử dụng trong xử lý văn bản và các thao tác tìm kiếm dựa trên tiền tố của các từ.
+Cây Segment (Segment Tree):
+Cây Segment được sử dụng để thực hiện các phép toán trên dãy số, như tìm tổng, tìm giá trị lớn nhất/nhỏ nhất trong một phạm vi.
+Cây Fenwick (Fenwick Tree):
+Cây Fenwick (còn gọi là cây BIT - Binary Indexed Tree) được sử dụng để thực hiện các phép toán tổng tiền tố (prefix sum) trên dãy số.
