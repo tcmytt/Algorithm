@@ -2,7 +2,7 @@
 using namespace std;
 
 void inp(){
-
+    // đây là dòng thử nghiệm git
 }
 
 void VD1(){
